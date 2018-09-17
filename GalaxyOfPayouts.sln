@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.16
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyOfPayouts", "GalaxyOfPayouts\GalaxyOfPayouts.csproj", "{EDE7B0D6-B030-4605-9D1A-D7D800C83DE8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GalaxyOfPayouts", "GalaxyOfPayouts\GalaxyOfPayouts.csproj", "{EDE7B0D6-B030-4605-9D1A-D7D800C83DE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyOfPayouts.Console", "GalaxyOfPayouts.Console\GalaxyOfPayouts.Console.csproj", "{616DE2FB-9D67-49A1-9038-1B4D65C5B213}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyOfPayouts.Data", "GalaxyOfPayouts.Data\GalaxyOfPayouts.Data.csproj", "{E96E9DBE-7F3A-46EE-A6D6-4768F6E2A8B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalaxyOfPayouts.Logic", "GalaxyOfPayouts.Logic\GalaxyOfPayouts.Logic.csproj", "{9B0FB89F-E79A-44A2-BBBE-E139B2E83882}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +21,23 @@ Global
 		{EDE7B0D6-B030-4605-9D1A-D7D800C83DE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDE7B0D6-B030-4605-9D1A-D7D800C83DE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EDE7B0D6-B030-4605-9D1A-D7D800C83DE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{616DE2FB-9D67-49A1-9038-1B4D65C5B213}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{616DE2FB-9D67-49A1-9038-1B4D65C5B213}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{616DE2FB-9D67-49A1-9038-1B4D65C5B213}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{616DE2FB-9D67-49A1-9038-1B4D65C5B213}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E96E9DBE-7F3A-46EE-A6D6-4768F6E2A8B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E96E9DBE-7F3A-46EE-A6D6-4768F6E2A8B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E96E9DBE-7F3A-46EE-A6D6-4768F6E2A8B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E96E9DBE-7F3A-46EE-A6D6-4768F6E2A8B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B0FB89F-E79A-44A2-BBBE-E139B2E83882}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B0FB89F-E79A-44A2-BBBE-E139B2E83882}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B0FB89F-E79A-44A2-BBBE-E139B2E83882}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B0FB89F-E79A-44A2-BBBE-E139B2E83882}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C33AE4C-854E-481E-89EE-190801311FBD}
 	EndGlobalSection
 EndGlobal

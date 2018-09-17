@@ -1,0 +1,8 @@
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\bin\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.deps.json
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\bin\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.runtimeconfig.json
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\bin\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.runtimeconfig.dev.json
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\bin\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.dll
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\obj\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.csprojAssemblyReference.cache
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\obj\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.csproj.CoreCompileInputs.cache
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\obj\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.AssemblyInfoInputs.cache
+C:\Projects\Inntec\GalaxyofPayouts\GalaxyOfPayouts.Console\obj\Debug\netcoreapp2.1\GalaxyOfPayouts.Console.AssemblyInfo.cs
