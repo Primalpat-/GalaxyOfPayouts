@@ -13,23 +13,23 @@ namespace GalaxyOfPayouts.Console.Services
     {
         private readonly ILogger _logger;
         private readonly GOPContext _db;
-        private readonly DiscordSocketClient _client;
+        private DiscordSocketClient _client;
         private readonly NotificationTimerElapsed _notificationTimerElapsed;
         private static Timer _timer;
 
-        public DiscordNetNotifications(ILogger<DiscordNetLogger> logger, GOPContext db,
-            DiscordSocketClient client, NotificationTimerElapsed notificationTimerElapsed)
+        public DiscordNetNotifications(ILogger<DiscordNetLogger> logger, GOPContext db, NotificationTimerElapsed notificationTimerElapsed)
         {
             _logger = logger;
             _db = db;
-            _client = client;
             _notificationTimerElapsed = notificationTimerElapsed;
 
             RegisterObservers();
         }
 
-        public Task Ready()
+        public Task Ready(DiscordSocketClient client)
         {
+            _client = client;
+
             _timer = new Timer((int)Duration.FromMinutes(1).TotalMilliseconds);
             _timer.Elapsed += OnTimedEvent;
             _timer.Enabled = true;

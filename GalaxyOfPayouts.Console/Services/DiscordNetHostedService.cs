@@ -76,7 +76,7 @@ namespace GalaxyOfPayouts.Console.Services
         private void SetClientEvents()
         {
             _client.Log += _discordLogger.Log;
-            _client.Ready += _discordNotifications.Ready;
+            _client.Ready += () => Task.Run(() => _discordNotifications.Ready(_client));
             _client.MessageReceived += (message) => Task.Run(() => _messageReceived.ReceiveMessage(message));
 
             RegisterObservers();

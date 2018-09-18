@@ -32,10 +32,10 @@ namespace GalaxyOfPayouts.Logic.DiscordEvents.EventObservers
             throw error;
         }
 
-        public void OnNext(DiscordSocketClient value)
+        public void OnNext(DiscordSocketClient client)
         {
             var responder = new DiscordResponder();
-            responder.SetResponseBehavior(new NotificationBehavior(_db, value));
+            responder.SetResponseBehavior(new NotificationBehavior(_db, client));
             responder.Respond();
         }
 
