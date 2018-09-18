@@ -6,8 +6,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Reflection;
 using Discord.Commands;
-using GalaxyOfPayouts.AutomatedMessages;
-using GalaxyOfPayouts.Models;
+//using GalaxyOfPayouts.AutomatedMessages;
+//using GalaxyOfPayouts.Models;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GalaxyOfPayouts
@@ -18,7 +18,7 @@ namespace GalaxyOfPayouts
         private DiscordSocketClient client;
         private IServiceProvider services;
 
-        public static void Main(string[] args) 
+        public static void Main(string[] args)
             => new Program().Start()
                             .GetAwaiter()
                             .GetResult();
@@ -48,8 +48,8 @@ namespace GalaxyOfPayouts
 
         private Task OnClientReady()
         {
-            var scheduler = new Scheduler(client);
-            scheduler.Start();
+            //var scheduler = new Scheduler(client);
+            //scheduler.Start();
 
             return Task.CompletedTask;
         }

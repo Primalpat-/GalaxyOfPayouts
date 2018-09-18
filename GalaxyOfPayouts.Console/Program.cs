@@ -1,66 +1,35 @@
-﻿using System;
-using Discord.WebSocket;
-using GalaxyOfPayouts.Console.Configuration;
-using GalaxyOfPayouts.Console.Services;
-using GalaxyOfPayouts.Logic.DiscordEvents.EventObservables;
-using GalaxyOfPayouts.Logic.Logging;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using System;
+using System.IO;
+using System.Threading.Tasks;
 
 namespace GalaxyOfPayouts.Console
 {
-    public class Startup
+    public class Program
     {
-        private readonly IHostBuilder _hostBuilder;
+        public static IConfiguration Configuration { get; set; }
 
-        public Startup(IHostBuilder hostBuilder)
+        public static IServiceProvider ServiceProvider { get; set; }
+        private static ILogger<Program> _logger;
+
+        public static async Task Main(string[] args = null)
         {
-            _hostBuilder = hostBuilder;
-        }
+            var host = new HostBuilder()
+                .ConfigureHostConfiguration((config) =>
+                {
+                    config.SetBasePath(Directory.GetCurrentDirectory());
+                    config.AddJsonFile("hostsettings.json", optional: true);
+                    config.AddEnvironmentVariables(prefix: "PAYOUTS_");
+                });
 
-        public IHostBuilder ConfigureApp()
-        {
-            return _hostBuilder.ConfigureAppConfiguration((hostContext, config) =>
-            {
-                config.SetBasePath(Environment.CurrentDirectory);
-                config.AddJsonFile("appsettings.json", optional: false);
-                config.AddJsonFile($"appsettings.{hostContext.HostingEnvironment.EnvironmentName}.json", optional: true);
-                config.AddEnvironmentVariables(prefix: "LANGUAGES_");
+            var startup = new Startup(host);
+            startup.ConfigureApp();
+            startup.ConfigureServices();
+            startup.ConfigureLogging();
 
-                if (hostContext.HostingEnvironment.IsDevelopment())
-                    config.AddUserSecrets<Startup>();
-            });
-        }
-
-        public IHostBuilder ConfigureServices()
-        {
-            return _hostBuilder.ConfigureServices((hostContext, services) =>
-            {
-                services.AddLogging();
-
-                services.AddOptions();
-                services.Configure<AppConfig>(hostContext.Configuration.GetSection("App"));
-                services.AddScoped(sp => sp.GetService<IOptions<AppConfig>>().Value);
-
-                services.AddScoped<IHostedService, DiscordNetHostedService>();
-                services.AddTransient<LogMessageFactory>();
-                services.AddTransient<DiscordSocketClient>();
-                services.AddTransient<DiscordNetLogger>();
-                services.AddTransient<JoinedGuild>();
-                services.AddTransient<MessageReceived>();
-            });
-        }
-
-        public IHostBuilder ConfigureLogging()
-        {
-            return _hostBuilder.ConfigureLogging((hostContext, config) =>
-            {
-                config.AddConsole();
-                config.AddDebug();
-            });
+            await host.RunConsoleAsync();
         }
     }
 }

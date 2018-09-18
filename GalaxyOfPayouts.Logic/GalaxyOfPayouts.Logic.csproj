@@ -4,4 +4,14 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Discord.Net" Version="2.0.0-beta" />
+    <PackageReference Include="NodaTime" Version="2.4.0" />
+    <PackageReference Include="Z.ExtensionMethods.WithNamespace" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GalaxyOfPayouts.Data\GalaxyOfPayouts.Data.csproj" />
+  </ItemGroup>
+
 </Project>

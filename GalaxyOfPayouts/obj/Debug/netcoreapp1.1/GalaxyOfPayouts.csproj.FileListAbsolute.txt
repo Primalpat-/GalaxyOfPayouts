@@ -19,3 +19,13 @@ C:\Users\ryanw\Documents\Visual Studio 2017\Projects\GalaxyOfPayouts\GalaxyOfPay
 C:\Users\ryanw\Documents\Visual Studio 2017\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.AssemblyInfo.cs
 C:\Users\ryanw\Documents\Visual Studio 2017\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.dll
 C:\Users\ryanw\Documents\Visual Studio 2017\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.pdb
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.csproj.CoreCompileInputs.cache
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.AssemblyInfoInputs.cache
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.AssemblyInfo.cs
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\bin\Debug\netcoreapp1.1\GalaxyOfPayouts.deps.json
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\bin\Debug\netcoreapp1.1\GalaxyOfPayouts.runtimeconfig.json
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\bin\Debug\netcoreapp1.1\GalaxyOfPayouts.runtimeconfig.dev.json
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\bin\Debug\netcoreapp1.1\GalaxyOfPayouts.dll
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\bin\Debug\netcoreapp1.1\GalaxyOfPayouts.pdb
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.dll
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts\obj\Debug\netcoreapp1.1\GalaxyOfPayouts.pdb

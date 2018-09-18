@@ -1,0 +1,12 @@
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\bin\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.deps.json
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\bin\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.dll
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\bin\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.pdb
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\bin\Release\netcoreapp2.1\GalaxyOfPayouts.Data.dll
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\bin\Release\netcoreapp2.1\GalaxyOfPayouts.Data.pdb
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.csprojAssemblyReference.cache
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.csproj.CoreCompileInputs.cache
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.AssemblyInfoInputs.cache
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.AssemblyInfo.cs
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.csproj.CopyComplete
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.dll
+C:\Inntec\Projects\GalaxyOfPayouts\GalaxyOfPayouts.Logic\obj\Release\netcoreapp2.1\GalaxyOfPayouts.Logic.pdb

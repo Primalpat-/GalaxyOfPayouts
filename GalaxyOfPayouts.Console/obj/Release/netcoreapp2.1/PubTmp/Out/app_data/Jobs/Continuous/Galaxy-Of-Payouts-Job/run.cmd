@@ -1,0 +1,1 @@
+dotnet GalaxyOfPayouts.Console.dll %*
